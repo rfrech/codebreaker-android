@@ -39,7 +39,9 @@
   android:layout_height="wrap_content"
   android:layout_weight="1"
   android:layout_margin="8dp"
-  android:text="@string/submit"/>
+  android:text="@string/submit"
+  android:maxLength="4"
+  android:hint="@string/guess_hint"/>
 
   </LinearLayout>
 
