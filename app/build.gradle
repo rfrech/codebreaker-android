@@ -25,6 +25,10 @@ android {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -41,8 +45,6 @@ dependencies {
 
     // Preferences/settings dependencies
     implementation 'androidx.preference:preference:1.1.1'
-    implementation 'androidx.wear:wear:1.0.0'
-    compileOnly 'com.google.android.wearable:wearable:2.5.0'
 
     // Lifecycle (LiveData and ViewModel) dependencies
     def lifecycle_version = '2.2.0'
