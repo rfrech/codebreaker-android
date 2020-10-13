@@ -20,24 +20,20 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintHorizontal_weight="2">
 
-    <EditText
-      android:id="@+id/guess"
+    <LinearLayout
+      android:id="@+id/spinners"
+      android:orientation="horizontal"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_margin="@dimen/half_margin"
-      android:inputType="textCapCharacters"/>
+      android:layout_height="wrap_content"/>
 
     <Button
       android:id="@+id/submit"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_margin="@dimen/half_margin"
-      android:text="@string/submit"
-      android:maxLength="4"
-      android:hint="@string/guess_hint"/>
+      android:text="@string/submit"/>
 
   </LinearLayout>
-
 
   <ListView
     android:id="@+id/guess_list"
@@ -48,6 +44,5 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toEndOf="@+id/guess_controls"
     app:layout_constraintHorizontal_weight="3"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
