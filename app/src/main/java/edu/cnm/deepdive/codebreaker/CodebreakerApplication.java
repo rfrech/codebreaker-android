@@ -1,7 +1,6 @@
 package edu.cnm.deepdive.codebreaker;
 
 import android.app.Application;
-import android.util.Log;
 import com.facebook.stetho.Stetho;
 import edu.cnm.deepdive.codebreaker.service.CodebreakerDatabase;
 import io.reactivex.schedulers.Schedulers;
